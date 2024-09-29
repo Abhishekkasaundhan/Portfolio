@@ -1,0 +1,105 @@
+header {
+    height: 100vh;
+    padding-top: 7 rem;
+    margin-top: 5rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    font-size: medium;
+}
+
+/* ===============CTA============ */
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    
+}
+.cta .btn {
+    color: #fff; /* Text color */
+    background-color: var(--color-primary); /* Background color */
+    border: none; /* Remove border */
+    padding: 1rem 2rem; /* Padding */
+    border-radius: 5px; /* Border radius */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth hover effect */
+    text-decoration: none; /* Remove underline from anchor */
+    display: inline-block; /* Ensure anchor behaves like a button */
+    text-align: center; /* Center the text */
+}
+
+.cta .btn-primary {
+    background-color: var(--color-primary);
+}
+
+.cta .btn-primary:hover {
+    background-color: var(--color-primary-dark); /* Darken background color on hover */
+}
+
+/* ==================HEADER SOCIALS================= */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 10;
+    bottom: 10rem;
+}
+
+.header__socials::after {
+    content:'';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* =================ME================ */
+
+.me {
+    /*background: linear-gradient(var(--color-primary), tranparent);*/
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4cqh;
+    border-radius: 26rem 26rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1,5rem 1.5rem 1.5rem;
+}
+
+/* =================SCROLL DOWN================ */
+.scroll__down {
+    position: absolute;
+    right: -0rem;
+    bottom: 10rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* =================MEDIA QUERIES (MEDIUM DEVICES)================ */
+@media screen and (max-width: 1024px) {
+    
+    }
+   header {
+       height: 68vh;
+    }
+
+
+/* =================MEDIA QUERIES (SMALL DEVICES)================ */
+@media screen and (max-width: 600px) {
+  header {
+   height: 100vh;
+  } 
+  .header__socials, .scroll__down {
+   display: none;
+  }
+}

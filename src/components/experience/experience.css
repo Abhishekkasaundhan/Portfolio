@@ -1,0 +1,106 @@
+/* Experience section */
+section#experience {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+section#experience h5 {
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: rgb(76, 51, 242); /* Adjust color to match your theme */
+    margin-bottom: 0.5rem;
+}
+
+section#experience h2 {
+    font-size: 3rem; /* Larger font size for main heading */
+    font-weight: 700; /* Bold font weight */
+    margin-bottom: 2rem;
+    color: var(--color-secondary); /* Adjust color to fit your theme */
+    text-transform: uppercase; /* Capitalize the heading */
+    letter-spacing: 1px; /* Slightly increase letter spacing */
+}
+
+/* Container for experience items */
+.experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* Style for each experience item */
+.experience__container > div {
+    background: var(--color-bg-varient);
+    padding: 2.4rem 3rem; /* Adjust padding for better spacing */
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.experience__container > div:hover {
+    background: transparent;
+    border-color: var(--color-primary-varient);
+    cursor: pointer; /* Change cursor to pointer for hover effect */
+}
+
+.experience__container > div h3 {
+    font-size: 2.5rem; /* Larger font size for section headings */
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary); /* Adjust color to match your theme */
+    text-transform: uppercase; /* Capitalize section titles */
+    letter-spacing: 1px; /* Slightly increase letter spacing */
+}
+
+/* Content within each experience section */
+.experience__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+/* Details within each experience item */
+.experience__details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.experience__details-icon {
+    font-size: 2.5rem; /* Larger icon size */
+    color: var(--color-primary); /* Adjust color to match your theme */
+}
+
+.experience__details h4 {
+    font-size: 1.8rem; /* Larger font size for skill names */
+    font-weight: 500;
+    margin: 0;
+    color: var(--color-text); /* Adjust color to fit your theme */
+}
+
+/* =================MEDIA QUERIES (MEDIUM DEVICES)================ */
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience__container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .experience__content {
+        padding: 1rem;
+    }
+}
+
+/* =================MEDIA QUERIES (SMALL DEVICES)================ */
+@media screen and (max-width: 600px) {
+    .experience__container {
+        gap: 1rem;
+    }
+
+    .experience__container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}

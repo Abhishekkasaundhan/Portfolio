@@ -1,0 +1,85 @@
+/* Certifications section */
+section#certifications {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+section#certifications h2 {
+    font-size: 3rem; /* Larger font size for the main heading */
+    font-weight: 700; /* Bold font weight */
+    margin-bottom: 2rem;
+    color: var(--color-white); /* Adjust color to fit your theme */
+    text-transform: uppercase; /* Capitalize the heading */
+    letter-spacing: 1px; /* Slightly increase letter spacing */
+}
+
+/* Container for certification items */
+.certification__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+/* Style for each certification item */
+.certification__item {
+    background: var(--color-bg-varient);
+    padding: 2rem; /* Increase padding for better spacing */
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.certification__item:hover {
+    border-color: var(--color-primary-varient);
+    background: transparent;
+}
+
+/* Image container style */
+.certification__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-bottom: 1.2rem; /* Space between image and text */
+}
+
+/* Image style */
+.certification__item img {
+    width: 100%; /* Ensure images fit the container */
+    border-radius: 1.5rem;
+}
+
+/* Certification title style */
+.certification__item h3 {
+    font-size: 2rem; /* Larger font size for certification titles */
+    font-weight: 600; /* Medium bold weight */
+    margin: 1rem 0; /* Adjust margin for spacing */
+    color: var(--color-text); /* Adjust color to fit your theme */
+}
+
+/* CTA style */
+.certification__item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem; /* Space between the title and CTA */
+}
+
+/* Button style */
+.btn-primary {
+    font-size: 1.1rem; /* Larger font size for buttons */
+    padding: 0.8rem 1.5rem; /* Increase button padding */
+}
+
+/* =================MEDIA QUERIES (MEDIUM DEVICES)================ */
+@media screen and (max-width: 1024px) {
+    .certification__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/* =================MEDIA QUERIES (SMALL DEVICES)================ */
+@media screen and (max-width: 600px) {
+    .certification__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
